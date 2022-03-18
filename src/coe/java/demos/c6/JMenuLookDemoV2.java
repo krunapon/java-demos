@@ -5,8 +5,8 @@ public class JMenuLookDemoV2 extends JFrame {
 	JMenuBar menuBar;
 	JMenu fileMenu;
 	JMenuItem newMI, openMI, saveMI, exitMI;
-	ButtonGroup group;
-	JRadioButtonMenuItem java, cpp;
+	ButtonGroup buttonGroup;
+	JRadioButtonMenuItem javaRBMI, pythonRBMI;
 	public JMenuLookDemoV2(String title) {
 		super(title);
 	}
@@ -27,27 +27,26 @@ public class JMenuLookDemoV2 extends JFrame {
 		fileMenu = new JMenu("File");
 		menuBar.add(fileMenu);
 
-		newMI = new JMenuItem("New", new ImageIcon("images/newIcon.png"));
+		newMI = new JMenuItem("New");
 		fileMenu.add(newMI);
 		openMI = new JMenuItem("Open", new ImageIcon(
 				"images/openIcon.png"));
 		fileMenu.add(openMI);
 
 		fileMenu.addSeparator();
-		group = new ButtonGroup();
-		java =  new JRadioButtonMenuItem("Java");
-		cpp = new JRadioButtonMenuItem("C++");
-		group.add(java);
-		java.setSelected(true);
-		group.add(cpp);
-		fileMenu.add(java);
-		fileMenu.add(cpp);
+		buttonGroup = new ButtonGroup();
+		javaRBMI =  new JRadioButtonMenuItem("Java");
+		pythonRBMI = new JRadioButtonMenuItem("Python");
+		buttonGroup.add(javaRBMI);
+		javaRBMI.setSelected(true);
+		buttonGroup.add(pythonRBMI);
+		fileMenu.add(javaRBMI);
+		fileMenu.add(pythonRBMI);
 		fileMenu.addSeparator();
 	
 		saveMI = new JMenuItem("Save", new ImageIcon("images/saveIcon.png"));
 		fileMenu.add(saveMI);
-		exitMI = new JMenuItem("Exit", new ImageIcon(
-				"images/exitIcon.png"));
+		exitMI = new JMenuItem("Exit");
 		fileMenu.add(exitMI);
 		setJMenuBar(menuBar);
 	}

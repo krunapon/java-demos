@@ -5,7 +5,7 @@ import java.awt.event.*;
 public class JTextAreaDemoV3 extends JTextAreaDemoV2 
 implements ActionListener {
 	JLabel updatedLabel;
-	JTextField updatedNews;
+	JTextField updatedNewsTxtField;
 	final static String newline = "\n";
 	public JTextAreaDemoV3(String title) {
 		super(title);
@@ -18,31 +18,27 @@ implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		// updatedNews is the text field that 
 		// we copy the string from
-		String text = updatedNews.getText();
+		String text = updatedNewsTxtField.getText();
 		// news is the text area that we 
 		// copy the string to
-		news.append(newline);
-		news.append(text);
-		updatedNews.setText("");
+		newsTxtArea.append(newline);
+		newsTxtArea.append(text);
+		updatedNewsTxtField.setText("");
 	}
 	public void addTextField() {
 		setLayout(new BorderLayout());
-		// set fontsize of JTextArea object
-		news.setFont(new Font("Serif", Font.BOLD, 18));
-		// put the scroll pane that contains
-		// text area in the north section
-		add(sp, BorderLayout.NORTH);
+		add(newsScrollPane, BorderLayout.NORTH);
 		JPanel update = new JPanel(new BorderLayout());
 		updatedLabel = new JLabel("Updated News");
-		updatedNews = new JTextField(30);
-		updatedNews.setFont(new Font("Serif", Font.BOLD, 14));
+		updatedNewsTxtField = new JTextField(30);
+		updatedNewsTxtField.setFont(new Font("Serif", Font.BOLD, 14));
 		update.add(updatedLabel, BorderLayout.NORTH);
-		update.add(updatedNews, BorderLayout.CENTER);
+		update.add(updatedNewsTxtField, BorderLayout.CENTER);
 		// put the update pane in the cente rsection
 		add(update, BorderLayout.CENTER);
-		// register updatedNews text field to
+		// register updatedNewsTxtField text field to
 		// the listener object
-		updatedNews.addActionListener(this);
+		updatedNewsTxtField.addActionListener(this);
 	}
 }
 

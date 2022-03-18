@@ -2,11 +2,6 @@ package coe.java.demos.c6;
 import javax.swing.JPanel;
 import java.awt.*;
 public class CoordinateDemoPanel extends JPanel {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
 		int width = getWidth();
@@ -22,8 +17,5 @@ public class CoordinateDemoPanel extends JPanel {
 		g.setFont(f);
 		g.setColor(Color.BLUE);
 		g.drawString(msg, w, h);
-		
-	
-
 	}
 }

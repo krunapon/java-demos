@@ -5,8 +5,8 @@ import java.awt.*;
 import javax.swing.JFrame;
 public class GradientFillsExample extends ShapeExamplePanel {
 	private GradientPaint gradient 
-		= new GradientPaint(0,0, Color.RED, 100,100,
-				Color.YELLOW, true);
+		= new GradientPaint(0,0, Color.YELLOW, 200,200,
+				Color.RED, false);
 	public void paintComponent(Graphics g) {
 		super.paintComponents(g);
 		Graphics2D g2d = (Graphics2D) g;

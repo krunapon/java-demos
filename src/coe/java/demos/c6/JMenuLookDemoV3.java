@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.event.*;
 public class JMenuLookDemoV3 extends JMenuLookDemoV2
 	implements ActionListener, ItemListener {
-	JTextArea output;
+	JTextArea outputTxtArea;
 	JScrollPane scrollPane;
 	final static String newline = "\n";
 	public JMenuLookDemoV3(String title) {
@@ -14,11 +14,11 @@ public class JMenuLookDemoV3 extends JMenuLookDemoV2
 	public Container crtContentPane() {
 		JPanel contentPane = new JPanel(new BorderLayout());
 		contentPane.setOpaque(true);
-		output = new JTextArea();
-		output.setEditable(false);
-		output.setForeground(Color.BLUE);
-		output.setFont(new Font("Serif", Font.BOLD,18));
-		scrollPane = new JScrollPane(output);
+		outputTxtArea = new JTextArea();
+		outputTxtArea.setEditable(false);
+		outputTxtArea.setForeground(Color.BLUE);
+		outputTxtArea.setFont(new Font("Serif", Font.BOLD,18));
+		scrollPane = new JScrollPane(outputTxtArea);
 		scrollPane.setPreferredSize(new Dimension(500,400));
 		contentPane.add(scrollPane, BorderLayout.CENTER);
 		return contentPane;
@@ -42,9 +42,9 @@ public class JMenuLookDemoV3 extends JMenuLookDemoV2
 		JMenuItem source = (JMenuItem) e.getSource();
 		String command = source.getText();
 		String s = "You have clicked menu " + command;
-		output.append(s + newline);
-		output.setCaretPosition(
-				output.getDocument().getLength());
+		outputTxtArea.append(s + newline);
+		outputTxtArea.setCaretPosition(
+				outputTxtArea.getDocument().getLength());
 		if (command.equals("Exit")) {
 			System.exit(0);
 		}
@@ -53,14 +53,14 @@ public class JMenuLookDemoV3 extends JMenuLookDemoV2
 		JMenuItem source = (JMenuItem) e.getSource();
 		if (e.getStateChange() == ItemEvent.SELECTED) {
 			String s = "Your file type is " + source.getText();
-			output.append(s + newline);
-			output.setCaretPosition(
-					output.getDocument().getLength());
+			outputTxtArea.append(s + newline);
+			outputTxtArea.setCaretPosition(
+					outputTxtArea.getDocument().getLength());
 		}
 	}
 	public void addItemListeners() {
-		java.addItemListener(this);
-		cpp.addItemListener(this);
+		javaRBMI.addItemListener(this);
+		pythonRBMI.addItemListener(this);
 	}
 	public static void main(String[] args) {
 		JMenuLookDemoV3 window = 

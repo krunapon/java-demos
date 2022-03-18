@@ -3,29 +3,25 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
-public class JTextFieldDemoV4 
-	extends JTextFieldDemoV3 
-	implements ActionListener {
+public class JTextFieldDemoV4 extends JTextFieldDemoV3 implements ActionListener {
 	public JTextFieldDemoV4(String title) {
 		super(title);
 	}
 	public void addListeners() {
-		submit.addActionListener(this);
-		cancel.addActionListener(this);
+		submitButton.addActionListener(this);
+		cancelButton.addActionListener(this);
 	}
 	public void actionPerformed(ActionEvent e) {
-		// getActionCommand() returns the button name
-		String command = e.getActionCommand();
-		// if (e.getSource().equals(submit)) {
-		//if (command.equals("Submit")) {
+		String command = e.getActionCommand(); // command is button name
+		// if (e.getSource().equals(submit)) { or if (command.equals("Submit")) {
 		Object srcObj = e.getSource();
-		if (srcObj == submit) {	
-			fullnameTxt.setText(nameInput.getText() + " "
-					+ lastnameInput.getText());
-		} else if (srcObj == cancel) {
-			fullnameTxt.setText("");
-			nameInput.setText("");
-			lastnameInput.setText("");
+		if (srcObj == submitButton) {
+			fullnameTxtField.setText(nameInputTxtField.getText() + " "
+					+ lastnameInputTxtField.getText());
+		} else if (srcObj == cancelButton) {
+			fullnameTxtField.setText("");
+			nameInputTxtField.setText("");
+			lastnameInputTxtField.setText("");
 		}
 	}
 	public static void main(String[] args) {

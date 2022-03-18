@@ -3,14 +3,15 @@ import javax.swing.*;
 public class JFrame1 {
 	public static void main(String[] args) {
 		JFrame window = new JFrame("GUI Test");
-		// set size width = 200 pixels height = 400 
-		window.setSize(250,100);
-		// set location so that it appears
-		// from the left side 200 pixels and 
-		// from the top side 100 pixels
-		window.setLocation(200,100);
-		// make it visible by the users
-		// make it appear on the screen
+		JPanel panel = new JPanel();
+		JButton submitButton = new JButton("Submit");
+		JButton cancelButton = new JButton("Cancel");
+		panel.add(submitButton);
+		panel.add(cancelButton);
+		window.add(panel);
 		window.setVisible(true);
+		window.setSize(200, 300);
+		window.setLocationRelativeTo(null);
+		window.pack();
 	}
 }

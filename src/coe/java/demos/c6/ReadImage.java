@@ -7,16 +7,16 @@ import javax.imageio.*;
 import java.net.URL;
 public class ReadImage extends JPanel {
 		BufferedImage img;
-		String filename = "images/taReadAbook.png";
-		public void paint(Graphics g) {
+		String filename = "images/kku2022.jpg";
+		public void paintComponent(Graphics g) {
 			g.drawImage(img,0,0,null);
 		}
 		public ReadImage() {
-			try {
-				URL myImg
-					= this.getClass().getResource("/images/taReadABook.png");
-				img = ImageIO.read(myImg);
-			} catch (IOException e) {
+		try {
+				//URL url = new URL("https://m.kku.ac.th/wp-content/uploads/2019/06/Golden-Jubilee-Convention-Hall.jpg");
+				//img = ImageIO.read(url);
+				img = ImageIO.read(new File(filename));
+		} catch (IOException e) {
 				e.printStackTrace(System.err);
 			}
 		}

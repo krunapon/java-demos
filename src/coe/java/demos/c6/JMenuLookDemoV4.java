@@ -17,7 +17,7 @@ public class JMenuLookDemoV4 extends
 	public void actionPerformed(ActionEvent e) {
 		// Want to know which menu item that the user selects
 		if (e.getSource() == openMI) {
-			output.append("You click menu open" + newline);
+			outputTxtArea.append("You click menu open" + newline);
 			int returnVal = fc.showOpenDialog(JMenuLookDemoV4.this);
 			// when the user chooses "open" or "ok" button
 			// of the open dialog
@@ -25,11 +25,11 @@ public class JMenuLookDemoV4 extends
 				File selectedFile = fc.getSelectedFile();
 				// get file name
 				String filename = selectedFile.getName();
-				output.append("You want to open file " +
+				outputTxtArea.append("You want to open file " +
 						filename + newline);
 			}
 		} else if (e.getSource() == saveMI) {
-			output.append("You click menu save" + newline);
+			outputTxtArea.append("You click menu save" + newline);
 			int returnVal = fc.showSaveDialog(JMenuLookDemoV4.this);
 			// when the user chooses "open" or "ok" button
 			// of the open dialog
@@ -37,13 +37,13 @@ public class JMenuLookDemoV4 extends
 				File selectedFile = fc.getSelectedFile();
 				// get file name
 				String filename = selectedFile.getName();
-				output.append("You want to save file " +
+				outputTxtArea.append("You want to save file " +
 						filename + newline);
 			}
 		} else if (e.getSource() == exitMI) {
 			System.exit(0);
 		} else if (e.getSource() == newMI) {
-			output.setText("");
+			outputTxtArea.setText("");
 		}
 	}
 	public static void main(String[] args) {

@@ -2,26 +2,30 @@ package coe.java.demos.c6;
 import java.awt.*;
 import javax.swing.*;
 public class JTextAreaDemoV2 extends JFrame {
-	JTextArea news;
-	JScrollPane sp;
+	protected JTextArea newsTxtArea;
+	protected JScrollPane newsScrollPane;
 	public JTextAreaDemoV2(String title) {
 		super(title);
 		setLayout(new FlowLayout());
 		// does not specify # of rows and # of columns here
 		// set the size through JScrollPane that contains
 		// this JTextArea
-		news = new JTextArea();
-		news.setLineWrap(true);
-		news.setWrapStyleWord(true);
-		news.setText("Bangkok considers moving Asean " +
-				"Summit from Phuket to Hua Hin -PM");
-		sp = new JScrollPane(news);
+		newsTxtArea = new JTextArea();
+		newsTxtArea.setLineWrap(true);
+		newsTxtArea.setWrapStyleWord(true);
+		newsTxtArea.setText("Ukrainian President Volodymyr Zelensky has hit back at" +
+				" widely discredited Russian disinformation suggesting " +
+				" Ukraine is preparing a chemical attack " +
+				"Credit: CNN news");
+
+		// create a scroll pane that adds new text area
+		newsScrollPane = new JScrollPane(newsTxtArea);
 		// makes the scroll bar always appears
-		sp.setVerticalScrollBarPolicy(
+		newsScrollPane.setVerticalScrollBarPolicy(
 		 		JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
 		// set the preferred size of the scroll pane
-		sp.setPreferredSize(new Dimension(200,100));
-		add(sp);
+		newsScrollPane.setPreferredSize(new Dimension(200,100));
+		add(newsScrollPane);
 	}
 	public void setFrameFeatures() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

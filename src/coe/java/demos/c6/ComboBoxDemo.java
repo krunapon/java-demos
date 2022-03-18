@@ -24,18 +24,13 @@ public class ComboBoxDemo extends JPanel
         picture.setBorder(BorderFactory.createEmptyBorder(10,0,0,0));
 
         //Lay out the demo.
-        add(petList, BorderLayout.PAGE_START);// NORTH
-        add(picture, BorderLayout.PAGE_END); // SOUTH
-        // top = 20, left = 20, bottom = 20, right = 20
+        add(petList, BorderLayout.NORTH);// NORTH
+        add(picture, BorderLayout.CENTER); // SOUTH
         setBorder(BorderFactory.createEmptyBorder(20,20,20,20));
     }
 
-    /** Listens to the combo box. */
     public void actionPerformed(ActionEvent e) {
-    	// get source that activates the event
-    	// type casting from Object to JComboBox
         JComboBox cb = (JComboBox)e.getSource();
-        // Get the selected item
         String petName = (String)cb.getSelectedItem();
         updateLabel(petName);
     }
@@ -50,13 +45,8 @@ public class ComboBoxDemo extends JPanel
     public static void main(String[] args) {
         //Create and set up the window.
         JFrame frame = new JFrame("ComboBoxDemo");
-        // this will make the program terminaed when
-        // the user clicks close on window
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        // JComponent is a superclass of ComboBoxDemo
         JComponent newContentPane = new ComboBoxDemo();
-        // set the content of the window to the object
-        // in this class
         frame.setContentPane(newContentPane);
         frame.pack();
         frame.setVisible(true);

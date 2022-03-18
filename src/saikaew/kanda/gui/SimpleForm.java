@@ -1,3 +1,4 @@
+package saikaew.kanda.gui;
 import javax.swing.*;
 import java.awt.*;
 
