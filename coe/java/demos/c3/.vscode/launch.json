@@ -1,0 +1,52 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ElseDangling",
+            "request": "launch",
+            "mainClass": "coe.java.demos.c3.ElseDangling"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ContinueExample",
+            "request": "launch",
+            "mainClass": "coe.java.demos.c3.ContinueExample"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BreakExample",
+            "request": "launch",
+            "mainClass": "coe.java.demos.c3.BreakExample"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - NestedForLoop3",
+            "request": "launch",
+            "mainClass": "NestedForLoop3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - NestedForLoop",
+            "request": "launch",
+            "mainClass": "coe.java.demos.c3.NestedForLoop"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - NestedForLoop2",
+            "request": "launch",
+            "mainClass": "coe.java.demos.c3.NestedForLoop2"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - NestedForLoop1",
+            "request": "launch",
+            "mainClass": "NestedForLoop1"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ForDemo",
+            "request": "launch",
+            "mainClass": "coe.java.demos.c3.ForDemo"
+        }
+    ]
+}

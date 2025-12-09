@@ -1,0 +1,77 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - PackageDemo1",
+            "request": "launch",
+            "mainClass": "PackageDemo1",
+            "projectName": "c4_dc064db9"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ScannerDemo",
+            "request": "launch",
+            "mainClass": "ScannerDemo"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - RecursiveDemo",
+            "request": "launch",
+            "mainClass": "RecursiveDemo"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FibonacciDemo",
+            "request": "launch",
+            "mainClass": "coe.java.demos.c4.FibonacciDemo"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FactorialDemo",
+            "request": "launch",
+            "mainClass": "coe.java.demos.c4.FactorialDemo"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - OverloadingDemo2",
+            "request": "launch",
+            "mainClass": "OverloadingDemo2"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - OverloadingDemo",
+            "request": "launch",
+            "mainClass": "coe.java.demos.c4.OverloadingDemo"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - NumbersSwapper2",
+            "request": "launch",
+            "mainClass": "coe.java.demos.c4.NumbersSwapper2"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - NumbersSwapper",
+            "request": "launch",
+            "mainClass": "coe.java.demos.c4.NumbersSwapper"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MaxFinder",
+            "request": "launch",
+            "mainClass": "coe.java.demos.c4.MaxFinder"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StaticMembersDemo",
+            "request": "launch",
+            "mainClass": "coe.java.demos.c4.StaticMembersDemo"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StaticMethodsDemo",
+            "request": "launch",
+            "mainClass": "coe.java.demos.c4.StaticMethodsDemo"
+        }
+    ]
+}
