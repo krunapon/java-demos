@@ -1,7 +1,20 @@
 package saikaew.kanda.exercises;
 import java.util.ArrayList;
 public class ArrayListDemo {
+
+
     public static void main(String[] args) {
+
+
+        static int x;
+
+        
+
+
+
+
+
+
         ArrayList<String> fruitsList = new ArrayList<String>();
         fruitsList.add("Apple");
         fruitsList.add("Banana");
