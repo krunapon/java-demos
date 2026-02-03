@@ -25,7 +25,7 @@ public class JFrameDemo1 {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.add(buttonsPanel);
         frame.setLocation(200, 150);
-        frame.setSize(400, 300);
+        frame.pack();
         frame.setVisible(true);
 
     }

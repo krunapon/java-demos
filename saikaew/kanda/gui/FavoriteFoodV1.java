@@ -17,8 +17,6 @@ public class FavoriteFoodV1 extends JFrame {
     }
 
     public void setFrameFeatures() {
-        this.setTitle("Favorite Food V1");
-        this.setSize(400, 200);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setVisible(true);
         this.pack();
