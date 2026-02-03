@@ -10,7 +10,7 @@ public class FavoriteFoodV1 extends JFrame {
     protected JButton food2Button;
     protected JButton food3Button;
 
-    private static final String myID = "683040123-4";
+    protected static final String myID = "683040123-4";
 
     public FavoriteFoodV1(String id) {
         super(id);
