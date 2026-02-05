@@ -6,6 +6,7 @@ public class Exercise5 extends Exercise4 {
     protected JLabel languagesLabel, genderLabel;
     protected JCheckBox pythonChkbox, javaChkbox, javascriptChkbox;
     protected JRadioButton maleButton, femaleButton, otherButton;
+    protected ButtonGroup genderGroup;
     public Exercise5(String title) {
         super(title);
     }
@@ -42,6 +43,11 @@ public class Exercise5 extends Exercise4 {
         genderPanel.add(otherButton);
         formPanel.add(genderLabel);
         formPanel.add(genderPanel);
+
+        genderGroup = new ButtonGroup();
+        genderGroup.add(maleButton);
+        genderGroup.add(femaleButton);
+        genderGroup.add(otherButton);
 
 
     }
