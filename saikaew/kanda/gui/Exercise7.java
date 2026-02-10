@@ -15,7 +15,10 @@ public class Exercise7 extends Exercise6 {
         menuBar = new JMenuBar();
         fileMenu = new JMenu("File");
         newMenuItem = new JMenuItem("New");
-        openMenuItem = new JMenuItem("Open", new ImageIcon("images/openIcon.png"));
+        
+        // openMenuItem = new JMenuItem("Open", new ImageIcon("images/openIcon.png"));
+        openMenuItem = new JMenuItem("Open");
+        openMenuItem.setIcon(new ImageIcon("images/openIcon.png"));
         quitMenuItem = new JMenuItem("Quit");
         fileMenu.add(newMenuItem);
         fileMenu.add(openMenuItem);
