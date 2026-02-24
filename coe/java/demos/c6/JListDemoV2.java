@@ -18,7 +18,7 @@ public class JListDemoV2 extends JFrame {
 		cp = (JPanel) getContentPane();
 		cp.setLayout(new BorderLayout());
 		jlist = new JList(labels);
-		jlist.setVisibleRowCount(13); 		// make 13 rows visible
+		// jlist.setVisibleRowCount(13); 		// make 13 rows visible
 		listPane = new JScrollPane(jlist);
 		cp.add(listPane, BorderLayout.PAGE_START);
 	}
