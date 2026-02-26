@@ -1,4 +1,4 @@
-// package coe.java.demos.c6.events;
+package coe.java.demos.c6.events;
 
 /*
  * Copyright (c) 1995 - 2008 Sun Microsystems, Inc.  All rights reserved.

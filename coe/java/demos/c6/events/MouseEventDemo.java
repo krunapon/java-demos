@@ -65,7 +65,7 @@ public class MouseEventDemo extends JPanel
         setBorder(BorderFactory.createEmptyBorder(20,20,20,20));
     }
     
-   /* public void mousePressed(MouseEvent e) {
+    public void mousePressed(MouseEvent e) {
         eventOutput("Mouse pressed (# of clicks: "
                 + e.getClickCount() + ")", e);
     }
@@ -78,7 +78,7 @@ public class MouseEventDemo extends JPanel
     }
     public void mouseExited(MouseEvent e) {
         eventOutput("Mouse exited", e);
-    }*/
+    }
     public void mouseClicked(MouseEvent e) {
         eventOutput("Mouse clicked (# of clicks: "
                 + e.getClickCount() + ")", e);
